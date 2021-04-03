@@ -1,0 +1,66 @@
+nav{
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 5px;
+}
+body{
+    background-color: #CFCBFB;
+}
+.container.f{
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 8pt;
+}
+.buttons{
+    float: right;
+}
+.table_news{
+    width: 60%;
+    background-color: white; 
+    border-radius: 10pt;
+    margin-top: 10pt;
+}
+.filtres{
+    width: 30%;
+    background-color: white;
+    border-radius: 10pt;
+    margin-left: 10%;
+    margin-top: 10pt;
+}
+#carouselCaptions{
+    margin: 0 15pt 15pt 0;
+}
+.card-body{
+    margin: 0 14pt 15px 1em;
+    font-size: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.card-text.txt1{
+    font-size: x-large;
+}
+.card-body.cr1{
+    background-image: url(snow.jpg);
+}
+p.card-text{
+    text-indent: 1.5em;
+}
+p.link{
+    text-align: right;
+    vertical-align: bottom;
+}
+.card-header{
+    color: black;
+    background-color: #fad3afd7;
+}
+.card-body.col{
+    color: #eee;
+    text-align: justify;
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+    font-size: 16pt;
+    background-image: url(cp.jpg);
+}
+.card-link.link{
+    vertical-align: bottom;
+}
