@@ -1,14 +1,14 @@
 console.log("Скрипт загружен")
 let formData = new FormData();
 
-var buttonsubmit = document.forms[1].buttonSubmit;
+var buttonsubmit = document.forms.news.buttonSubmit;
 buttonsubmit.addEventListener("click", buttonPressed);
 
 function buttonPressed(evt) {
 	console.log("Кнопка нажата загружен");
 	evt.preventDefault();
 
-	if (document.forms[1].FormInputHeaderNews.value == '') {
+	if (document.forms.news.FormInputHeaderNews.value == '') {
 		Swal.fire(
 			'Ошибка!',
 			'Вы не ввели наименование новости!',
@@ -17,7 +17,7 @@ function buttonPressed(evt) {
 		console.log("Вы не ввели наименование новости!");
 		return
 	}
-	if (document.forms[1].FormInputNews.value == '') {
+	if (document.forms.news.FormInputNews.value == '') {
 		Swal.fire(
 			'Ошибка!',
 			'Вы не написали новость!',
@@ -26,7 +26,7 @@ function buttonPressed(evt) {
 		console.log("Вы не написали новость!");
 		return
 	}
-	if (document.forms[1].FormInputAuthor.value == '' && document.forms[1].invalidCheck.checked == false) {
+	if (document.forms.news.FormInputAuthor.value == '' && document.forms.news.invalidCheck.checked == false) {
 		Swal.fire(
 			'Ошибка!',
 			'Вы не ввели автора! Или не поставили галочку в поле Анонимно.',
@@ -35,9 +35,9 @@ function buttonPressed(evt) {
 		console.log("Вы не ввели автора! Или не поставили галочку в поле Анонимно.");
 		return
 	}
-	formData.append('newsName', document.forms[1].FormInputHeaderNews.value);
-	formData.append('newsAuthor', document.forms[1].FormInputAuthor.value);
-	if (document.forms[1].invalidCheck.checked == false) {
+	formData.append('newsName', document.forms.news.FormInputHeaderNews.value);
+	formData.append('newsAuthor', document.forms.news.FormInputAuthor.value);
+	if (document.forms.news.invalidCheck.checked == false) {
 		Swal.fire({
 			position: "center",
 			icon: "success",
